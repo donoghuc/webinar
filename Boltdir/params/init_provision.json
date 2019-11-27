@@ -1,0 +1,7 @@
+{
+  "terraform_params": {
+    "dir": "~/working_dir/webinar/terraform",
+    "var_file": ["vars/secret.tfvars", "vars/ssh.tfvars", "vars/region_west.tfvars"],
+    "state": "west_init_state.tfstate"
+  }
+}

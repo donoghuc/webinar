@@ -1,0 +1,7 @@
+version: 2
+config:
+  ssh:
+    user: ubuntu
+    run-as: root
+    host-key-check: false
+    private-key: '../terraform/keys/aws_key'

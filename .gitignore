@@ -1,0 +1,14 @@
+.git/
+.*.sw[op]
+/Boltdir/.resource_types
+/Boltdir/modules/
+/terraform/.terraform
+/terraform/east_web_servers.tfstate
+/terraform/east_web_servers.tfstate.backup
+/terraform/keys/
+/terraform/terraform
+/terraform/terraform.tfstate
+/terraform/vars/secret.tfvars
+/terraform/webinar.tf.bkp
+/terraform/west_init_state.tfstate
+/terraform/west_init_state.tfstate.backup

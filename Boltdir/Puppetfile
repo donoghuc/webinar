@@ -1,0 +1,4 @@
+mod 'puppetlabs-stdlib', '6.1.0'
+mod 'puppetlabs-concat', '6.1.0'
+mod 'puppetlabs-haproxy', '4.1.0'
+mod 'puppetlabs-translate', '2.0.0'

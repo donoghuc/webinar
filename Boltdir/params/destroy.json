@@ -1,0 +1,14 @@
+{
+  "destroy_targets": [
+    {
+      "dir": "~/working_dir/webinar/terraform",
+      "var_file": ["vars/secret.tfvars", "vars/ssh.tfvars", "vars/region_west.tfvars"],
+      "state": "west_init_state.tfstate"
+    },
+     {
+      "dir": "~/working_dir/webinar/terraform",
+      "var_file": ["vars/secret.tfvars", "vars/ssh.tfvars", "vars/region_east.tfvars"],
+      "state": "east_web_servers.tfstate "
+    }
+  ]
+}

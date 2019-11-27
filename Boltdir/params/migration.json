@@ -1,0 +1,14 @@
+{
+  "apply_new": {
+    "dir": "~/working_dir/webinar/terraform",
+    "var_file": ["vars/secret.tfvars", "vars/ssh.tfvars", "vars/region_east.tfvars"],
+    "target": "aws_instance.web_servers",
+    "state_out": "east_web_servers.tfstate"
+  },
+  "destroy_old": {
+    "dir": "~/working_dir/webinar/terraform",
+    "var_file": ["vars/secret.tfvars", "vars/ssh.tfvars", "vars/region_west.tfvars"],
+    "target": "aws_instance.web_servers",
+    "state": "west_init_state.tfstate"
+  }
+}

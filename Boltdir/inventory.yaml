@@ -1,0 +1,30 @@
+version: 2
+groups:
+  - name: load_balancer
+    targets:
+      - _plugin: terraform
+        dir: '../terraform'
+        resource_type: aws_instance.load_balancer
+        state: west_init_state.tfstate
+        target_mapping:
+          name: public_dns
+          config:
+            ssh:
+              host: public_ip
+  - name: web_servers
+    targets:
+      - _plugin: terraform
+        dir: '../terraform'
+        resource_type: aws_instance.web_servers
+        state: west_init_state.tfstate
+        target_mapping:
+          name: public_dns
+          config:
+            ssh:
+              host: public_ip
+config:
+  ssh:
+    user: ubuntu
+    run-as: root
+    host-key-check: false
+    private-key: '../terraform/keys/aws_key'
